@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>مسارات التقدم | Pathways of Progress</title>
+<meta name="description" content="منظمة غير ربحية لتمويل بناء وصيانة الطرق العامة | NGO financing road construction worldwide" />
+<meta property="og:title" content="Pathways of Progress | مسارات التقدم" />
+<link rel="stylesheet" href="pathways-style.css" />
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+  <div class="container">
+    <a href="#" class="nav-logo">
+      <div class="nav-logo-icon">P</div>
+      <span class="nav-logo-text" data-ar="مسارات التقدم" data-en="Pathways">مسارات التقدم</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#projects" data-ar="المشاريع" data-en="Projects">المشاريع</a></li>
+      <li><a href="#impact"   data-ar="التأثير"  data-en="Impact">التأثير</a></li>
+      <li><a href="#transparency" data-ar="الشفافية" data-en="Transparency">الشفافية</a></li>
+      <li><a href="#mission"  data-ar="مهمتنا"  data-en="Our Mission">مهمتنا</a></li>
+      <li><a href="#stories"  data-ar="قصص النجاح" data-en="Stories">قصص النجاح</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="lang-btn" onclick="toggleLang()">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+        <span id="langLabel">EN</span>
+      </button>
+      <a href="#donate" class="nav-donate-btn">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+        <span data-ar="تبرع الآن" data-en="Donate Now">تبرع الآن</span>
+      </a>
+      <button class="hamburger" onclick="openMenu()">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <div class="mobile-menu-head">
+    <span style="font-size:1.1rem;font-weight:700;color:#fff" data-ar="مسارات التقدم" data-en="Pathways">مسارات التقدم</span>
+    <button class="mobile-close" onclick="closeMenu()">✕</button>
+  </div>
+  <div class="mobile-body">
+    <a href="#projects" onclick="closeMenu()" data-ar="المشاريع" data-en="Projects">المشاريع</a>
+    <a href="#impact"   onclick="closeMenu()" data-ar="التأثير"  data-en="Impact">التأثير</a>
+    <a href="#transparency" onclick="closeMenu()" data-ar="الشفافية" data-en="Transparency">الشفافية</a>
+    <a href="#mission"  onclick="closeMenu()" data-ar="مهمتنا"  data-en="Our Mission">مهمتنا</a>
+    <a href="#stories"  onclick="closeMenu()" data-ar="قصص النجاح" data-en="Stories">قصص النجاح</a>
+    <a href="#donate" class="mobile-donate" onclick="closeMenu()" data-ar="تبرع الآن" data-en="Donate Now">تبرع الآن</a>
+  </div>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-bg">
+    <img src="assets/01541a455_generated_3661d32f.png" alt="Aerial road view" />
+    <div class="hero-overlay-t"></div><div class="hero-overlay-s"></div>
+  </div>
+  <div class="hero-inner"><div class="container">
+    <div class="hero-grid">
+      <div style="animation:fadeUp .9s ease both">
+        <div class="hero-tag"><span class="hero-tag-dot"></span><span data-ar="٢٤٧ مشروعاً نشطاً حول العالم" data-en="247 Active Projects Worldwide">٢٤٧ مشروعاً نشطاً حول العالم</span></div>
+        <h1 data-ar="ساهم في بناء طرق أفضل للمجتمعات" data-en="Help Build Better Roads for Communities">ساهم في بناء طرق أفضل للمجتمعات</h1>
+        <p class="hero-sub" data-ar="نمول بناء وإصلاح وصيانة الطرق العامة لربط المجتمعات المعزولة بفرص أفضل في التعليم والصحة والتجارة." data-en="We finance construction, repair, and maintenance of public roads, connecting isolated communities to better education, healthcare, and economic opportunities.">نمول بناء وإصلاح وصيانة الطرق العامة لربط المجتمعات المعزولة بفرص أفضل في التعليم والصحة والتجارة.</p>
+        <div class="hero-btns">
+          <a href="#donate" class="btn-primary">
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            <span data-ar="تبرع الآن" data-en="Donate Now">تبرع الآن</span>
+          </a>
+          <a href="#projects" class="btn-ghost" data-ar="استكشف المشاريع" data-en="Explore Projects">استكشف المشاريع</a>
+        </div>
+        <div class="hero-trust">
+          <div class="hero-trust-item"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg><span data-ar="منظمة مرخصة" data-en="Licensed Organization">منظمة مرخصة</span></div>
+          <div class="hero-trust-item"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg><span data-ar="تقارير مدققة" data-en="Audited Reports">تقارير مدققة</span></div>
+          <div class="hero-trust-item"><svg viewBox="0 0 24 24"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg><span data-ar="شفافية كاملة" data-en="Full Transparency">شفافية كاملة</span></div>
+        </div>
+      </div>
+      <div class="donate-widget" style="animation:fadeUp .9s .35s ease both">
+        <p class="widget-counter-label" data-ar="إجمالي الأمتار المُعبّدة" data-en="Total Meters Paved">إجمالي الأمتار المُعبّدة</p>
+        <div class="widget-counter-num" id="meterCounter">247,850</div>
+        <p class="widget-counter-unit" data-ar="متر" data-en="meters">متر</p>
+        <div class="widget-divider"></div>
+        <p class="widget-label" data-ar="تبرع بكيلومتر" data-en="Donate a Kilometer">تبرع بكيلومتر</p>
+        <div class="amount-btns">
+          <button class="amount-btn" onclick="selectAmount(this,'50')">$50</button>
+          <button class="amount-btn active" onclick="selectAmount(this,'100')">$100</button>
+          <button class="amount-btn" onclick="selectAmount(this,'500')">$500</button>
+        </div>
+        <div class="widget-input-wrap">
+          <span class="widget-input-prefix">$</span>
+          <input class="widget-input" type="number" id="heroAmount" value="100" />
+        </div>
+        <button class="widget-btn" onclick="scrollToDonate()">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          <span data-ar="تبرع الآن" data-en="Donate Now">تبرع الآن</span>
+        </button>
+      </div>
+    </div>
+  </div></div>
+</section>
+
+<!-- IMPACT STATS -->
+<section class="section stats-section" id="impact">
+  <div class="container">
+    <div class="text-center reveal">
+      <span class="section-label" data-ar="تأثيرنا" data-en="Our Impact">تأثيرنا</span>
+      <h2 class="section-title" data-ar="أرقام تحكي القصة" data-en="Numbers That Tell the Story">أرقام تحكي القصة</h2>
+    </div>
+    <div class="stats-grid">
+      <div class="stat-card reveal reveal-delay-1"><span class="stat-num" data-target="1248" data-suffix="+">0+</span><p class="stat-label" data-ar="طريق تم تمويله" data-en="Roads Funded">طريق تم تمويله</p><p class="stat-desc" data-ar="في ٤٢ دولة حول العالم" data-en="Across 42 countries worldwide">في ٤٢ دولة حول العالم</p><div class="stat-line"></div></div>
+      <div class="stat-card reveal reveal-delay-2"><span class="stat-num" data-target="3200000" data-suffix="+">0+</span><p class="stat-label" data-ar="مستفيد" data-en="Lives Impacted">مستفيد</p><p class="stat-desc" data-ar="مجتمعات ربطناها بالعالم" data-en="Communities connected to opportunity">مجتمعات ربطناها بالعالم</p><div class="stat-line"></div></div>
+      <div class="stat-card reveal reveal-delay-3"><span class="stat-num" data-target="48" data-suffix="M+">0M+</span><p class="stat-label" data-ar="دولار من التبرعات" data-en="Raised in Donations">دولار من التبرعات</p><p class="stat-desc" data-ar="بشفافية كاملة ومراجعة مستقلة" data-en="Full transparency & audit">بشفافية كاملة ومراجعة مستقلة</p><div class="stat-line"></div></div>
+      <div class="stat-card reveal reveal-delay-4"><span class="stat-num" data-target="247" data-suffix="">0</span><p class="stat-label" data-ar="مشروع نشط" data-en="Active Projects">مشروع نشط</p><p class="stat-desc" data-ar="قيد التنفيذ حالياً" data-en="Currently under construction">قيد التنفيذ حالياً</p><div class="stat-line"></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURED PROJECTS -->
+<section class="section projects-section" id="projects">
+  <div class="container">
+    <div class="projects-header reveal">
+      <div><span class="section-label" data-ar="مشاريعنا المميزة" data-en="Featured Projects">مشاريعنا المميزة</span><h2 class="section-title" data-ar="طرق تغيّر حياة المجتمعات" data-en="Roads That Change Communities">طرق تغيّر حياة المجتمعات</h2></div>
+      <div class="scroll-btns">
+        <button class="scroll-btn" onclick="scrollProjects(-1)"><svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg></button>
+        <button class="scroll-btn" onclick="scrollProjects(1)"><svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg></button>
+      </div>
+    </div>
+  </div>
+  <div class="projects-strip no-scroll" id="projectsStrip">
+    <div class="project-card">
+      <div class="project-img-wrap"><img src="assets/be9a8d438_generated_48acca72.png" alt="Valley Blossom Road" /><span class="project-badge" data-ar="طريق جديد" data-en="New Road">طريق جديد</span></div>
+      <div class="project-body"><div class="project-loc"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span data-ar="كينيا" data-en="Kenya">كينيا</span></div><h3 class="project-title" data-ar="طريق وادي الزهور" data-en="Valley Blossom Road">طريق وادي الزهور</h3><p class="project-desc" data-ar="ربط ١٢ قرية معزولة بشبكة الطرق الرئيسية لتسهيل الوصول إلى المدارس والمستشفيات." data-en="Connecting 12 isolated villages to the main road network for access to schools and hospitals.">ربط ١٢ قرية معزولة بشبكة الطرق الرئيسية لتسهيل الوصول إلى المدارس والمستشفيات.</p><div class="progress-nums"><span class="progress-raised">$128,000</span><span class="progress-goal" data-ar="من $200,000" data-en="of $200,000">من $200,000</span></div><div class="progress-bar"><div class="progress-fill" data-pct="64"></div></div><p class="progress-pct" data-ar="64% مكتمل" data-en="64% funded">64% مكتمل</p></div>
+    </div>
+    <div class="project-card">
+      <div class="project-img-wrap"><img src="assets/9c3ffc624_generated_b6638727.png" alt="Hope River Bridge" /><span class="project-badge" data-ar="جسر" data-en="Bridge">جسر</span></div>
+      <div class="project-body"><div class="project-loc"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span data-ar="بنغلاديش" data-en="Bangladesh">بنغلاديش</span></div><h3 class="project-title" data-ar="جسر نهر الأمل" data-en="Hope River Bridge">جسر نهر الأمل</h3><p class="project-desc" data-ar="بناء جسر يربط بين ضفتي النهر لخدمة ٥٠٠٠ أسرة تعتمد على القوارب." data-en="Building a bridge across the river to serve 5,000 families dependent on boats.">بناء جسر يربط بين ضفتي النهر لخدمة ٥٠٠٠ أسرة تعتمد على القوارب.</p><div class="progress-nums"><span class="progress-raised">$340,000</span><span class="progress-goal" data-ar="من $500,000" data-en="of $500,000">من $500,000</span></div><div class="progress-bar"><div class="progress-fill" data-pct="68"></div></div><p class="progress-pct" data-ar="68% مكتمل" data-en="68% funded">68% مكتمل</p></div>
+    </div>
+    <div class="project-card">
+      <div class="project-img-wrap"><img src="assets/48c802424_generated_2d0556cf.png" alt="Coastal Highway" /><span class="project-badge" data-ar="إعادة تأهيل" data-en="Rehabilitation">إعادة تأهيل</span></div>
+      <div class="project-body"><div class="project-loc"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span data-ar="الفلبين" data-en="Philippines">الفلبين</span></div><h3 class="project-title" data-ar="إعادة تأهيل الطريق الساحلي" data-en="Coastal Highway Rehab">إعادة تأهيل الطريق الساحلي</h3><p class="project-desc" data-ar="إصلاح ٤٥ كيلومتراً من الطرق الساحلية المتضررة من الأعاصير." data-en="Repairing 45km of coastal roads damaged by typhoons.">إصلاح ٤٥ كيلومتراً من الطرق الساحلية المتضررة من الأعاصير.</p><div class="progress-nums"><span class="progress-raised">$89,000</span><span class="progress-goal" data-ar="من $150,000" data-en="of $150,000">من $150,000</span></div><div class="progress-bar"><div class="progress-fill" data-pct="59"></div></div><p class="progress-pct" data-ar="59% مكتمل" data-en="59% funded">59% مكتمل</p></div>
+    </div>
+    <div class="project-card">
+      <div class="project-img-wrap"><img src="assets/891f308a1_generated_f2b40994.png" alt="Green Mountain Pass" /><span class="project-badge" data-ar="طريق جبلي" data-en="Mountain Road">طريق جبلي</span></div>
+      <div class="project-body"><div class="project-loc"><svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span data-ar="نيبال" data-en="Nepal">نيبال</span></div><h3 class="project-title" data-ar="ممر الجبل الأخضر" data-en="Green Mountain Pass">ممر الجبل الأخضر</h3><p class="project-desc" data-ar="شق طريق جبلي يربط مجتمعات الأعالي بالوادي الرئيسي." data-en="Carving a mountain road connecting highland communities to the main valley.">شق طريق جبلي يربط مجتمعات الأعالي بالوادي الرئيسي.</p><div class="progress-nums"><span class="progress-raised">$210,000</span><span class="progress-goal" data-ar="من $350,000" data-en="of $350,000">من $350,000</span></div><div class="progress-bar"><div class="progress-fill" data-pct="60"></div></div><p class="progress-pct" data-ar="60% مكتمل" data-en="60% funded">60% مكتمل</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- TRANSPARENCY DASHBOARD -->
+<section class="section dashboard-section" id="transparency">
+  <div class="container">
+    <div class="text-center reveal" style="margin-bottom:5rem">
+      <span class="section-label" data-ar="الشفافية المالية" data-en="Financial Transparency">الشفافية المالية</span>
+      <h2 class="section-title" data-ar="كل ريال تتبرع به مُتابع" data-en="Every Dollar You Donate Is Tracked">كل ريال تتبرع به مُتابع</h2>
+      <p class="section-subtitle" data-ar="نؤمن بأن الشفافية الكاملة هي أساس الثقة. تابع أين تذهب تبرعاتك في الوقت الفعلي." data-en="We believe full transparency is the foundation of trust. Track your donations in real time.">نؤمن بأن الشفافية الكاملة هي أساس الثقة.</p>
+    </div>
+    <div class="metrics-grid">
+      <div class="metric-card reveal reveal-delay-1"><svg class="metric-icon" viewBox="0 0 24 24"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg><p class="metric-label" data-ar="إجمالي التبرعات" data-en="Total Raised">إجمالي التبرعات</p><p class="metric-val">$48.2M</p><p class="metric-change">+18%</p></div>
+      <div class="metric-card reveal reveal-delay-2"><svg class="metric-icon" viewBox="0 0 24 24"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg><p class="metric-label" data-ar="الأموال المخصصة" data-en="Funds Allocated">الأموال المخصصة</p><p class="metric-val">$42.7M</p><p class="metric-change">88.6%</p></div>
+      <div class="metric-card reveal reveal-delay-3"><svg class="metric-icon" viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg><p class="metric-label" data-ar="ميزانية الصيانة" data-en="Maintenance Budget">ميزانية الصيانة</p><p class="metric-val">$8.7M</p><p class="metric-change" data-ar="سنوياً" data-en="Annually">سنوياً</p></div>
+      <div class="metric-card reveal reveal-delay-4"><svg class="metric-icon" viewBox="0 0 24 24"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg><p class="metric-label" data-ar="حملات نشطة" data-en="Active Campaigns">حملات نشطة</p><p class="metric-val">34</p><p class="metric-change" data-ar="جارية" data-en="Ongoing">جارية</p></div>
+    </div>
+    <div class="dash-grid">
+      <div class="dash-card reveal">
+        <h3 class="dash-card-title" data-ar="توزيع الأموال" data-en="Fund Allocation">توزيع الأموال</h3>
+        <div class="donut-wrap">
+          <div class="donut"></div>
+          <div class="donut-label-wrap">
+            <div class="donut-item"><div class="donut-item-left"><div class="donut-dot" style="background:#144534"></div><span class="donut-item-name" data-ar="بناء الطرق" data-en="Road Construction">بناء الطرق</span></div><span class="donut-item-pct">62%</span></div>
+            <div class="donut-item"><div class="donut-item-left"><div class="donut-dot" style="background:#A3834B"></div><span class="donut-item-name" data-ar="الصيانة" data-en="Maintenance">الصيانة</span></div><span class="donut-item-pct">18%</span></div>
+            <div class="donut-item"><div class="donut-item-left"><div class="donut-dot" style="background:#374151"></div><span class="donut-item-name" data-ar="إداري" data-en="Administrative">إداري</span></div><span class="donut-item-pct">8%</span></div>
+            <div class="donut-item"><div class="donut-item-left"><div class="donut-dot" style="background:#4B5563"></div><span class="donut-item-name" data-ar="أبحاث" data-en="Research">أبحاث</span></div><span class="donut-item-pct">12%</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="dash-card reveal reveal-delay-2">
+        <h3 class="dash-card-title" data-ar="أداء الحملات" data-en="Campaign Performance">أداء الحملات</h3>
+        <div class="camp-item"><div class="camp-top"><span class="camp-name" data-ar="ممر شرق أفريقيا" data-en="East Africa Corridor">ممر شرق أفريقيا</span><span class="camp-pct">74%</span></div><div class="camp-bar"><div class="camp-fill" data-pct="74"></div></div><div class="camp-bottom"><span data-ar="$890K جُمع" data-en="$890K raised">$890K جُمع</span><span data-ar="$1.2M الهدف" data-en="$1.2M goal">$1.2M الهدف</span></div></div>
+        <div class="camp-item"><div class="camp-top"><span class="camp-name" data-ar="جسور جنوب آسيا" data-en="South Asia Bridges">جسور جنوب آسيا</span><span class="camp-pct">56%</span></div><div class="camp-bar"><div class="camp-fill" data-pct="56"></div></div><div class="camp-bottom"><span data-ar="$450K جُمع" data-en="$450K raised">$450K جُمع</span><span data-ar="$800K الهدف" data-en="$800K goal">$800K الهدف</span></div></div>
+        <div class="camp-item"><div class="camp-top"><span class="camp-name" data-ar="طرق أمريكا اللاتينية" data-en="Latin America Roads">طرق أمريكا اللاتينية</span><span class="camp-pct">53%</span></div><div class="camp-bar"><div class="camp-fill" data-pct="53"></div></div><div class="camp-bottom"><span data-ar="$320K جُمع" data-en="$320K raised">$320K جُمع</span><span data-ar="$600K الهدف" data-en="$600K goal">$600K الهدف</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DONATION SECTION -->
+<section class="section donate-section" id="donate">
+  <div class="container">
+    <div class="donate-grid">
+      <div class="donate-testimonial">
+        <img src="assets/49302e74b_generated_56e918d8.png" alt="Community beneficiary" />
+        <div class="donate-testimonial-overlay">
+          <p class="donate-quote" data-ar='"قبل بناء الطريق، كانت رحلة المدرسة تستغرق ٣ ساعات مشياً. الآن أطفالنا يصلون في ٢٠ دقيقة."' data-en='"Before the road, the journey to school took 3 hours on foot. Now our children arrive in 20 minutes."'>"قبل بناء الطريق، كانت رحلة المدرسة تستغرق ٣ ساعات مشياً. الآن أطفالنا يصلون في ٢٠ دقيقة."</p>
+          <p class="donate-quotee" data-ar="فاطمة أحمد — كينيا" data-en="Fatima Ahmed — Kenya">فاطمة أحمد — كينيا</p>
+        </div>
+      </div>
+      <div>
+        <span class="section-label" data-ar="ساهم اليوم" data-en="Contribute Today">ساهم اليوم</span>
+        <h2 class="section-title" style="margin-bottom:2rem" data-ar="اختر تأثيرك" data-en="Choose Your Impact">اختر تأثيرك</h2>
+        <div id="donate-step1">
+          <div class="type-toggle">
+            <button class="type-btn active" id="typeOnce" onclick="setType('once')">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+              <span data-ar="تبرع لمرة واحدة" data-en="One-Time">تبرع لمرة واحدة</span>
+            </button>
+            <button class="type-btn" id="typeMonthly" onclick="setType('monthly')">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="17 1 21 5 17 9"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><polyline points="7 23 3 19 7 15"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg>
+              <span data-ar="شهرياً" data-en="Monthly">شهرياً</span>
+            </button>
+          </div>
+          <div class="impact-options">
+            <button class="impact-option selected" onclick="selectImpact(this,25)"><div class="impact-option-top"><span class="impact-label" data-ar="عبّد ١٠ أمتار" data-en="Fund 10 Meters">عبّد ١٠ أمتار</span><span class="impact-amount">$25</span></div><p class="impact-desc" data-ar="تغطي تكلفة المواد الخام لـ ١٠ أمتار" data-en="Covers raw materials for 10 meters of road">تغطي تكلفة المواد الخام لـ ١٠ أمتار</p></button>
+            <button class="impact-option" onclick="selectImpact(this,100)"><div class="impact-option-top"><span class="impact-label" data-ar="عبّد قسم من جسر" data-en="Fund a Bridge Section">عبّد قسم من جسر</span><span class="impact-amount">$100</span></div><p class="impact-desc" data-ar="تساهم في بناء ركيزة جسر واحدة" data-en="Contributes to one bridge pillar construction">تساهم في بناء ركيزة جسر واحدة</p></button>
+            <button class="impact-option" onclick="selectImpact(this,500)"><div class="impact-option-top"><span class="impact-label" data-ar="اربط قرية" data-en="Connect a Village">اربط قرية</span><span class="impact-amount">$500</span></div><p class="impact-desc" data-ar="تموّل ربط قرية كاملة بالطريق الرئيسي" data-en="Funds connecting an entire village to the main road">تموّل ربط قرية كاملة بالطريق الرئيسي</p></button>
+          </div>
+          <div class="custom-amount-wrap"><span class="custom-amount-prefix">$</span><input class="custom-amount-input" type="number" id="donateAmount" value="25" /></div>
+          <button class="btn-primary" style="width:100%;justify-content:center;border-radius:14px;font-size:1.05rem" onclick="goStep2()">
+            <span data-ar="متابعة للدفع" data-en="Continue to Payment">متابعة للدفع</span>
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+          </button>
+        </div>
+        <div id="donate-step2">
+          <div class="summary-box"><span class="summary-label" data-ar="المبلغ المحدد" data-en="Selected Amount">المبلغ المحدد</span><span class="summary-amount" id="summaryAmount">$25</span></div>
+          <p style="font-size:.9rem;font-weight:700;color:var(--obsidian);margin-bottom:.75rem" data-ar="اختر طريقة الدفع" data-en="Select Payment Method">اختر طريقة الدفع</p>
+          <div class="pay-methods">
+            <button class="pay-method selected" onclick="selectPay(this)"><svg viewBox="0 0 24 24"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg><span data-ar="بطاقة ائتمان" data-en="Credit Card">بطاقة ائتمان</span></button>
+            <button class="pay-method" onclick="selectPay(this)"><svg viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg><span>Apple Pay</span></button>
+            <button class="pay-method" onclick="selectPay(this)"><svg viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg><span>Google Pay</span></button>
+          </div>
+          <input class="form-field" type="email" id="donorEmail" /><input class="form-field" type="text" id="donorName" />
+          <div class="step-actions">
+            <button class="btn-back" onclick="goStep1()" data-ar="رجوع" data-en="Back">رجوع</button>
+            <button class="btn-complete" onclick="completeDonation()"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span data-ar="أكمل التبرع" data-en="Complete Donation">أكمل التبرع</span></button>
+          </div>
+          <p class="receipt-note" data-ar="ستتلقى إيصالاً تلقائياً عبر البريد الإلكتروني. جميع التبرعات معفاة من الضرائب." data-en="You'll receive an automatic receipt by email. All donations are tax-deductible.">ستتلقى إيصالاً تلقائياً عبر البريد الإلكتروني.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MISSION -->
+<section class="section mission-section" id="mission">
+  <div class="container">
+    <div class="mission-grid">
+      <div class="mission-img-col reveal">
+        <div class="mission-img-wrap">
+          <img src="assets/bfe17ab6e_generated_6d31a42b.png" alt="Engineers reviewing blueprints" />
+          <div class="mission-float-card"><div class="mission-float-num">15+</div><div class="mission-float-text" data-ar="سنوات من الخبرة في بناء الطرق" data-en="Years of road construction expertise">سنوات من الخبرة في بناء الطرق</div></div>
+        </div>
+      </div>
+      <div class="mission-text-col reveal reveal-delay-2">
+        <span class="section-label" data-ar="مهمتنا" data-en="Our Mission">مهمتنا</span>
+        <h2 class="section-title" style="margin-bottom:3rem" data-ar="نبني الطرق التي تبني المستقبل" data-en="Building Roads That Build Futures">نبني الطرق التي تبني المستقبل</h2>
+        <div class="mission-pillar"><div class="mission-pillar-icon"><svg viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></div><div><h3 class="mission-pillar-title" data-ar="لماذا البنية التحتية مهمة" data-en="Why Road Infrastructure Matters">لماذا البنية التحتية مهمة</h3><p class="mission-pillar-desc" data-ar="الطرق هي الشريان الحيوي الذي يربط المجتمعات المعزولة بالتعليم والرعاية الصحية والأسواق." data-en="Roads are the vital arteries connecting isolated communities to education, healthcare, and markets.">الطرق هي الشريان الحيوي الذي يربط المجتمعات المعزولة بالتعليم والرعاية الصحية والأسواق.</p></div></div>
+        <div class="mission-pillar"><div class="mission-pillar-icon"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div><div><h3 class="mission-pillar-title" data-ar="الأثر المجتمعي" data-en="Community Impact">الأثر المجتمعي</h3><p class="mission-pillar-desc" data-ar="كل طريق نبنيه يفتح أبواب الفرص: أطفال يصلون إلى المدارس، مرضى يحصلون على الرعاية، مزارعون يبيعون محاصيلهم." data-en="Every road we build opens doors: children reach schools, patients access care, farmers sell their crops.">كل طريق نبنيه يفتح أبواب الفرص: أطفال يصلون إلى المدارس، مرضى يحصلون على الرعاية.</p></div></div>
+        <div class="mission-pillar"><div class="mission-pillar-icon"><svg viewBox="0 0 24 24"><path d="M12 22V12M12 12C12 12 7 9 7 6a5 5 0 0 1 10 0c0 3-5 6-5 6z"/></svg></div><div><h3 class="mission-pillar-title" data-ar="الاستدامة طويلة الأمد" data-en="Long-Term Sustainability">الاستدامة طويلة الأمد</h3><p class="mission-pillar-desc" data-ar="لا نبني فقط — نُصون. نخصص ميزانيات صيانة دائمة وندرب الكوادر المحلية لعقود قادمة." data-en="We don't just build — we maintain. Permanent maintenance budgets and local team training for decades.">لا نبني فقط — نُصون. نخصص ميزانيات صيانة دائمة وندرب الكوادر المحلية لعقود قادمة.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SUCCESS STORIES -->
+<section class="section stories-section" id="stories">
+  <div class="container">
+    <div class="text-center reveal" style="margin-bottom:3.5rem"><span class="section-label" data-ar="قصص النجاح" data-en="Success Stories">قصص النجاح</span><h2 class="section-title" data-ar="أصوات من المجتمعات التي خدمناها" data-en="Voices from Communities We Served">أصوات من المجتمعات التي خدمناها</h2></div>
+    <div class="before-after reveal"><img src="assets/301f1b83b_generated_b7a5b548.png" alt="Before and after road construction" /></div>
+    <div class="stories-grid">
+      <div class="story-card reveal reveal-delay-1"><svg class="quote-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg><p class="story-quote" data-ar='"الطريق الجديد غيّر حياتنا. أصبح بإمكان أطفالنا الوصول إلى المدرسة في ربع الوقت، وبات بإمكان سيارة الإسعاف الوصول إلينا."' data-en='"The new road changed our lives. Our children can reach school in a quarter of the time, and ambulances can finally reach us."'>"الطريق الجديد غيّر حياتنا. أصبح بإمكان أطفالنا الوصول إلى المدرسة في ربع الوقت."</p><div class="story-person"><img src="assets/49302e74b_generated_56e918d8.png" alt="Fatima Ahmed" class="story-avatar" /><div><p class="story-name" data-ar="فاطمة أحمد" data-en="Fatima Ahmed">فاطمة أحمد</p><p class="story-role" data-ar="أم لخمسة أطفال — كينيا" data-en="Mother of five — Kenya">أم لخمسة أطفال — كينيا</p></div></div></div>
+      <div class="story-card reveal reveal-delay-2"><svg class="quote-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg><p class="story-quote" data-ar='"كمزارع، كنت أفقد ٤٠٪ من محصولي بسبب عدم قدرتي على نقله في الوقت المناسب. الطريق الجديد أنقذ رزقي."' data-en='"As a farmer, I used to lose 40% of my harvest because I couldn\'t transport it in time. The new road saved my livelihood.>"كمزارع، كنت أفقد ٤٠٪ من محصولي. الطريق الجديد أنقذ رزقي."</p><div class="story-person"><img src="assets/891f308a1_generated_f2b40994.png" alt="Rajesh Kumar" class="story-avatar" /><div><p class="story-name" data-ar="راجيش كومار" data-en="Rajesh Kumar">راجيش كومار</p><p class="story-role" data-ar="مزارع — نيبال" data-en="Farmer — Nepal">مزارع — نيبال</p></div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST & GOVERNANCE -->
+<section class="section trust-section">
+  <div class="container">
+    <div class="text-center reveal" style="margin-bottom:4rem"><span class="section-label" data-ar="الثقة والحوكمة" data-en="Trust & Governance">الثقة والحوكمة</span><h2 class="section-title" data-ar="شفافية بلا حدود" data-en="Boundless Transparency">شفافية بلا حدود</h2></div>
+    <div class="trust-grid">
+      <div class="trust-card reveal reveal-delay-1"><div class="trust-icon"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></div><h3 class="trust-card-title" data-ar="تقارير مالية شفافة" data-en="Transparent Financial Reports">تقارير مالية شفافة</h3><p class="trust-card-desc" data-ar="تقارير مالية ربع سنوية متاحة للجميع" data-en="Quarterly financial reports available to everyone">تقارير مالية ربع سنوية متاحة للجميع</p></div>
+      <div class="trust-card reveal reveal-delay-2"><div class="trust-icon"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><h3 class="trust-card-title" data-ar="مراجعة مستقلة" data-en="Independent Audits">مراجعة مستقلة</h3><p class="trust-card-desc" data-ar="مراجعة سنوية من شركات تدقيق دولية معتمدة" data-en="Annual audits by certified international firms">مراجعة سنوية من شركات تدقيق دولية معتمدة</p></div>
+      <div class="trust-card reveal reveal-delay-3"><div class="trust-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg></div><h3 class="trust-card-title" data-ar="شهادات الامتثال" data-en="Compliance Certificates">شهادات الامتثال</h3><p class="trust-card-desc" data-ar="معتمدون من هيئات رقابية دولية متعددة" data-en="Certified by multiple international regulatory bodies">معتمدون من هيئات رقابية دولية متعددة</p></div>
+      <div class="trust-card reveal reveal-delay-4"><div class="trust-icon"><svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div><h3 class="trust-card-title" data-ar="شراكات موثوقة" data-en="Trusted Partnerships">شراكات موثوقة</h3><p class="trust-card-desc" data-ar="شراكات مع منظمات أممية وحكومات محلية" data-en="Partnerships with UN organizations and local governments">شراكات مع منظمات أممية وحكومات محلية</p></div>
+    </div>
+    <div class="reveal"><p class="partners-label" data-ar="شركاؤنا الموثوقون" data-en="Our Trusted Partners">شركاؤنا الموثوقون</p>
+    <div class="partners-row">
+      <div class="partner-item"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><span data-ar="الأمم المتحدة" data-en="United Nations">الأمم المتحدة</span></div>
+      <div class="partner-item"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><span data-ar="البنك الدولي" data-en="World Bank">البنك الدولي</span></div>
+      <div class="partner-item"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><span data-ar="الصليب الأحمر" data-en="Red Cross">الصليب الأحمر</span></div>
+      <div class="partner-item"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg><span data-ar="منظمة البنية الدولية" data-en="Global Infrastructure Org">منظمة البنية الدولية</span></div>
+    </div></div>
+  </div>
+</section>
+
+<!-- VOLUNTEER -->
+<section class="section volunteer-section">
+  <div class="container">
+    <div class="text-center reveal"><span class="section-label" data-ar="المجتمع والتطوع" data-en="Community & Volunteering">المجتمع والتطوع</span><h2 class="section-title" data-ar="كن جزءاً من التغيير" data-en="Be Part of the Change">كن جزءاً من التغيير</h2></div>
+    <div class="volunteer-grid">
+      <div class="vol-card reveal reveal-delay-1"><div class="vol-icon"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div><h3 class="vol-title" data-ar="انضم كمتطوع" data-en="Join as Volunteer">انضم كمتطوع</h3><p class="vol-desc" data-ar="سجّل اهتمامك للتطوع في مشاريعنا الميدانية والمكتبية." data-en="Register your interest to volunteer in our field and office projects.">سجّل اهتمامك للتطوع في مشاريعنا الميدانية والمكتبية.</p><a href="#" class="vol-link"><span data-ar="سجّل اهتمامك" data-en="Register Interest">سجّل اهتمامك</span><svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></div>
+      <div class="vol-card reveal reveal-delay-2"><div class="vol-icon"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></div><h3 class="vol-title" data-ar="الفعاليات القادمة" data-en="Upcoming Events">الفعاليات القادمة</h3><p class="vol-desc" data-ar="شارك في فعالياتنا المجتمعية وورش العمل والمؤتمرات." data-en="Participate in our community events, workshops, and conferences.">شارك في فعالياتنا المجتمعية وورش العمل والمؤتمرات.</p><a href="#" class="vol-link"><span data-ar="عرض الفعاليات" data-en="View Events">عرض الفعاليات</span><svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></div>
+      <div class="vol-card reveal reveal-delay-3"><div class="vol-icon"><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div><h3 class="vol-title" data-ar="منتدى المجتمع" data-en="Community Forum">منتدى المجتمع</h3><p class="vol-desc" data-ar="تواصل مع متطوعين ومتبرعين آخرين في منتدانا المجتمعي." data-en="Connect with other volunteers and donors in our community forum.">تواصل مع متطوعين ومتبرعين آخرين في منتدانا المجتمعي.</p><a href="#" class="vol-link"><span data-ar="انضم للنقاش" data-en="Join Discussion">انضم للنقاش</span><svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a></div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-timeline"><div class="container"><p class="timeline-label" data-ar="رحلتنا عبر السنين" data-en="Our Journey Through the Years">رحلتنا عبر السنين</p><div class="timeline-row"><div class="timeline-item"><div class="timeline-year">2008</div><div class="timeline-event" data-ar="تأسيس المنظمة" data-en="Organization Founded">تأسيس المنظمة</div></div><div class="timeline-item"><div class="timeline-year">2012</div><div class="timeline-event" data-ar="أول ١٠٠ طريق" data-en="First 100 Roads">أول ١٠٠ طريق</div></div><div class="timeline-item"><div class="timeline-year">2018</div><div class="timeline-event" data-ar="التوسع إلى ٣٠ دولة" data-en="Expanded to 30 Countries">التوسع إلى ٣٠ دولة</div></div><div class="timeline-item"><div class="timeline-year">2024</div><div class="timeline-event" data-ar="أكثر من ١٢٠٠ طريق" data-en="Over 1,200 Roads Built">أكثر من ١٢٠٠ طريق</div></div></div></div></div>
+  <div class="footer-cta"><div class="container"><h3 data-ar="ابدأ رحلة جديدة" data-en="Start a New Journey">ابدأ رحلة جديدة</h3><p data-ar="كل تبرع يقرّب مجتمعاً من العالم. ساهم اليوم." data-en="Every donation brings a community closer to the world. Contribute today.">كل تبرع يقرّب مجتمعاً من العالم. ساهم اليوم.</p><a href="#donate" class="footer-cta-btn"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg><span data-ar="تبرع الآن" data-en="Donate Now">تبرع الآن</span></a></div></div>
+  <div class="footer-main"><div class="container"><div class="footer-grid">
+    <div><div class="footer-brand-logo"><div class="footer-brand-icon">P</div><span class="footer-brand-name" data-ar="مسارات التقدم" data-en="Pathways of Progress">مسارات التقدم</span></div><p class="footer-brand-desc" data-ar="منظمة غير ربحية مكرسة لتمويل بناء وإصلاح وصيانة الطرق العامة حول العالم." data-en="A non-profit dedicated to financing construction, repair, and maintenance of public roads worldwide.">منظمة غير ربحية مكرسة لتمويل بناء وإصلاح وصيانة الطرق العامة حول العالم.</p><button class="lang-switch-btn" onclick="toggleLang()"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg><span id="footerLangLabel">English</span></button></div>
+    <div><p class="footer-col-title" data-ar="روابط سريعة" data-en="Quick Links">روابط سريعة</p><ul class="footer-links"><li><a href="#mission" data-ar="عن المنظمة" data-en="About Us">عن المنظمة</a></li><li><a href="#projects" data-ar="المشاريع" data-en="Projects">المشاريع</a></li><li><a href="#transparency" data-ar="الشفافية" data-en="Transparency">الشفافية</a></li><li><a href="#stories" data-ar="قصص النجاح" data-en="Stories">قصص النجاح</a></li><li><a href="#donate" data-ar="تبرع" data-en="Donate">تبرع</a></li></ul></div>
+    <div><p class="footer-col-title" data-ar="تواصل معنا" data-en="Contact Us">تواصل معنا</p><div class="footer-contact-item"><svg class="footer-contact-icon" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>info@pathwaysofprogress.org</div><div class="footer-contact-item"><svg class="footer-contact-icon" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13 19.79 19.79 0 0 1 1.61 4.38 2 2 0 0 1 3.6 2.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.06 6.06l.91-.92a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>+1 (555) 123-4567</div><div class="footer-contact-item"><svg class="footer-contact-icon" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span data-ar="٤٥ شارع الأمل، جنيف، سويسرا" data-en="45 Hope Street, Geneva, Switzerland">٤٥ شارع الأمل، جنيف، سويسرا</span></div></div>
+    <div><p class="footer-col-title" data-ar="تابعنا" data-en="Follow Us">تابعنا</p><div class="social-row"><a href="https://facebook.com" target="_blank" rel="noopener" class="social-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a><a href="https://instagram.com" target="_blank" rel="noopener" class="social-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a><a href="https://linkedin.com" target="_blank" rel="noopener" class="social-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a></div><p class="footer-col-title" data-ar="قانوني" data-en="Legal">قانوني</p><ul class="footer-links"><li><a href="#" data-ar="سياسة الخصوصية" data-en="Privacy Policy">سياسة الخصوصية</a></li><li><a href="#" data-ar="الشروط والأحكام" data-en="Terms & Conditions">الشروط والأحكام</a></li><li><a href="#" data-ar="سياسة الاسترداد" data-en="Refund Policy">سياسة الاسترداد</a></li></ul></div>
+  </div></div></div>
+  <div class="footer-bar"><div class="container"><p>© 2024 <span data-ar="مسارات التقدم. جميع الحقوق محفوظة." data-en="Pathways of Progress. All rights reserved.">مسارات التقدم. جميع الحقوق محفوظة.</span></p></div></div>
+</footer>
+
+<button class="scroll-top" id="scrollTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">
+  <svg viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"/></svg>
+</button>
+<script>
+  
+  var currentLang='ar',meterCount=247850,selectedAmount=25;
+
+window.addEventListener('scroll',function(){
+  var n=document.getElementById('navbar'),s=document.getElementById('scrollTop');
+  window.scrollY>50?(n.classList.add('scrolled'),s.classList.add('visible')):(n.classList.remove('scrolled'),s.classList.remove('visible'));
+});
+
+function openMenu(){document.getElementById('mobileMenu').classList.add('open');document.body.style.overflow='hidden'}
+function closeMenu(){document.getElementById('mobileMenu').classList.remove('open');document.body.style.overflow=''}
+
+function toggleLang(){
+  currentLang=currentLang==='ar'?'en':'ar';
+  var isAr=currentLang==='ar';
+  document.documentElement.lang=currentLang;
+  document.documentElement.dir=isAr?'rtl':'ltr';
+  document.body.classList.toggle('ltr',!isAr);
+  document.querySelectorAll('[data-ar][data-en]').forEach(function(el){el.textContent=isAr?el.getAttribute('data-ar'):el.getAttribute('data-en')});
+  document.getElementById('langLabel').textContent=isAr?'EN':'عربي';
+  document.getElementById('footerLangLabel').textContent=isAr?'English':'العربية';
+  var dE=document.getElementById('donorEmail'),dN=document.getElementById('donorName');
+  if(dE)dE.placeholder=isAr?'البريد الإلكتروني':'Email address';
+  if(dN)dN.placeholder=isAr?'الاسم الكامل':'Full name';
+}
+
+setInterval(function(){
+  meterCount+=Math.floor(Math.random()*3)+1;
+  var el=document.getElementById('meterCounter');
+  if(el)el.textContent=meterCount.toLocaleString(currentLang==='ar'?'ar-SA':'en-US');
+},4000);
+
+function selectAmount(btn,val){
+  document.querySelectorAll('.amount-btn').forEach(function(b){b.classList.remove('active')});
+  btn.classList.add('active');
+  document.getElementById('heroAmount').value=val;
+}
+function scrollToDonate(){document.getElementById('donate').scrollIntoView({behavior:'smooth'})}
+function setType(type){document.getElementById('typeOnce').classList.toggle('active',type==='once');document.getElementById('typeMonthly').classList.toggle('active',type==='monthly')}
+function selectImpact(btn,amount){
+  document.querySelectorAll('.impact-option').forEach(function(b){b.classList.remove('selected')});
+  btn.classList.add('selected');selectedAmount=amount;
+  document.getElementById('donateAmount').value=amount;
+}
+function goStep2(){
+  var amt=document.getElementById('donateAmount').value||selectedAmount;
+  document.getElementById('summaryAmount').textContent='$'+parseInt(amt).toLocaleString();
+  document.getElementById('donate-step1').style.display='none';
+  document.getElementById('donate-step2').style.display='block';
+}
+function goStep1(){document.getElementById('donate-step1').style.display='block';document.getElementById('donate-step2').style.display='none'}
+function selectPay(btn){document.querySelectorAll('.pay-method').forEach(function(b){b.classList.remove('selected')});btn.classList.add('selected')}
+function completeDonation(){
+  var e=document.getElementById('donorEmail').value.trim(),n=document.getElementById('donorName').value.trim();
+  if(!e||!n){alert(currentLang==='ar'?'يرجى ملء جميع الحقول':'Please fill in all fields');return}
+  alert(currentLang==='ar'?'شكراً جزيلاً، '+n+'! تم استلام تبرعك بنجاح.':'Thank you, '+n+'! Your donation has been received.');
+  goStep1();document.getElementById('donorEmail').value='';document.getElementById('donorName').value='';
+}
+
+var revObs=new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting)e.target.classList.add('visible')})},{threshold:.12});
+document.querySelectorAll('.reveal').forEach(function(el){revObs.observe(el)});
+
+var cntObs=new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting){animateCounter(e.target);cntObs.unobserve(e.target)}})},{threshold:.3});
+document.querySelectorAll('.stat-num[data-target]').forEach(function(el){cntObs.observe(el)});
+
+function animateCounter(el){
+  var target=parseInt(el.getAttribute('data-target')),suffix=el.getAttribute('data-suffix')||'',dur=2000,step=target/(dur/16),cur=0;
+  var t=setInterval(function(){cur+=step;if(cur>=target){cur=target;clearInterval(t)}el.textContent=Math.floor(cur).toLocaleString()+suffix},16);
+}
+
+var barObs=new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting){e.target.querySelectorAll('.progress-fill,.camp-fill').forEach(function(f){setTimeout(function(){f.style.width=f.getAttribute('data-pct')+'%'},200)});barObs.unobserve(e.target)}})},{threshold:.2});
+document.querySelectorAll('.project-card,.dash-card').forEach(function(el){barObs.observe(el)});
+
+// Init placeholders
+document.getElementById('donorEmail').placeholder='البريد الإلكتروني';
+document.getElementById('donorName').placeholder='الاسم الكامل';
+</script>
+</body>
+</html>
